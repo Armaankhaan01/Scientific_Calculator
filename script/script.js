@@ -2,6 +2,12 @@ var screen = document.querySelector('#screen');
 var buttons = document.querySelectorAll('.button');
 var buttons = document.querySelectorAll('.button');
 
+document.addEventListener('dblclick', (event) => {
+  console.log('click disabled!');
+  event.preventDefault();
+  event.stopPropagation();
+  return false;
+}, true);
 
 for (item of buttons) {
     item.addEventListener('click', (e) => {
