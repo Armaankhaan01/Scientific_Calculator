@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utils.css">
+    <title>Scientific Calculator</title>
+</head>
+
+<body>
+    <h1 class="text-center"> Welcome to The Scientific Calculator</h1>
+    <div class="container flex felx-col mx-auto items-center">
+        <div class="row">
+            <p id="demo"></p>
+        </div>
+        <div class="row">
+            <input placeholder="Preview" type="text" class="input" id="screen" readonly disabled>
+        </div>
+        <div class="row">
+            <button class="dark-grey onclick" onclick="backspace()">CE</button>
+            <button class="dark-grey  onclick" onclick="fact()">x!</button>
+            <button class="grey onclick" onclick="screen.value = ''">AC</button>
+            <button class="grey button">(</button>
+            <button class="grey button">)</button>
+            <button class="character button extra-large-fonts">÷</button>
+        </div>
+        <div class="row">
+            <button class="dark-grey onclick" onclick="sin()">sin</button>
+            <button class="dark-grey onclick large-font" onclick="pi()">π</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="character button">X</button>
+        </div>
+        <div class="row">
+            <button class="dark-grey button">cos</button>
+            <button class="dark-grey button">log</button>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="character button extra-large-fonts">-</button>
+        </div>
+        <div class="row">
+            <button class="dark-grey onclick" onclick="tan()">tan</button>
+            <button class="dark-grey onclick large-fonts" onclick="sqrt()">√</button>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="character button extra-large-fonts">+</button>
+        </div>
+        <div class="row">
+            <button class="dark-grey onclick" onclick="e()">e</button>
+            <button class="dark-grey onclick" onclick="pow()">x<sup class="dark-grey" onclick="pow()">y</su></button>
+            <button class="button">0</button>
+            <button class="button">%</button>
+            <button class="button">.</button>
+            <button class="character onclick extra-large-fonts" onclick="screen.value=eval(screen.value)">=</button>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
